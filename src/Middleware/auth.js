@@ -10,9 +10,9 @@ const Authentication = async (req, res, next) => {
     try {
 
         //===================== Check Presence of Key with Value in Header =====================//
-        let token = req.headers['authorization']
+        let token = req.headers['x-api-key']
         if (!token) { return res.status(400).send({ status: false, message: "Token must be Present." }) }
-        token = token.slice(7)
+
         //===================== Verify token & asigning it's value in request body =====================//
         JWT.verify(token, "UW-Infotech-Secret-Key-13579", function (error, decodedToken) {
             if (error) {
