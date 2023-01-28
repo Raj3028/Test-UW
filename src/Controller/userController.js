@@ -1,7 +1,7 @@
 //===================== Importing Module and Packages =====================//
-const userModel = require('../Model/userModel')
+const userModel = require('../Model/userModel.js')
 const JWT = require('jsonwebtoken')
-const validator = require('../Validator/validator')
+const validator = require('../Validator/validator.js')
 const bcrypt = require("bcrypt")
 const saltRounds = 10
 
@@ -113,20 +113,6 @@ const userLogin = async function (req, res) {
     }
 }
 
-
-const updatePassword = async (req, res) => {
-    
-    try {
-
-
-
-
-    } catch (error) {
-
-        return res.status(500).send({ status: false, error: error.message })
-    }
-
-}
 
 
 

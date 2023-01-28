@@ -1,9 +1,9 @@
 //=====================Importing Module and Packages=====================//
 const express = require('express');
 const router = express.Router();
-const { Authentication, Authorization } = require('../Middleware/auth')
-const { createUser, userLogin } = require('../Controller/userController')
-const { createTask, getTask, updateTask, deleteTask } = require("../controller/taskController")
+const { Authentication, Authorization } = require('../Middleware/auth.js')
+const { createUser, userLogin } = require('../Controller/userController.js')
+const { createTask, getTask, updateTask, deleteTask } = require("../Controller/taskController.js")
 //<<<============================================================================>>>//
 
 
