@@ -19,6 +19,6 @@ mongoose.connect(process.env.DB, { useNewUrlParser: true })
 app.use('/', route)
 
 
-app.listen(process.env.PORT || 3001, function () {
-    console.log('Express App Running on Port: ' + (process.env.PORT || 3001))
+app.listen(process.env.PORT, function () {
+    console.log('Express App Running on Port: ' + (process.env.PORT))
 });
